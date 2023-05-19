@@ -2,18 +2,28 @@
   <app-banda-detail [bandaDetail]="selectedBanda"></app-banda-detail>
 </div>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col mb-2" *ngFor="let banda of bandas">
-          <div class="card p-2" style="width: 15rem; height: 15rem">
+          <div class="card p-1" style="width: 20rem; height: 25.5rem">
+            <div class="card-title">
+              <h5 class="card-title">{{ banda.nombre }}</h5>
+            </div>
               <img
                 class="card-img-top"
-                src="{{ banda.image }}"
-                alt="{{ banda.name }}"
-                (click)="onSelected(banda)"
+                src="{{ banda.imagen }}"
+                alt="{{ banda.nombre }}"
               />
+
               <div class="card-body">
-                <h5 class="card-title">{{ banda.name }}</h5>
+                <p class="card-text">Calificación: {{banda.estrellas}} de {{banda.cantidadOpiniones}} opiniones
+                  <br />
+                  Duracion: {{banda.duracion}} | Dificultad {{banda.dificultad}}
+                  <br />
+                  Por: {{banda.autorReceta}}
+                </p>
+                <a href="#" class="btn btn-primary" (click)="
+                onSelected(banda)">Ver mas</a>
               </div>
            </div>
       </div>

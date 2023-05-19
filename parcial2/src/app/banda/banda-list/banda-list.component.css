@@ -3,6 +3,8 @@ img {
   width: auto;
 }
 
-.selected-band {
-  background: #417FA6;
-}
+.btn-primary {
+  border-color: #F16194 !important;
+  background-color: #F16194 !important;
+  }
+

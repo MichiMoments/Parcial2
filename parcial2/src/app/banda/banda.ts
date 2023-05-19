@@ -1,28 +1,40 @@
 export class Banda {
   id: number;
-  name: string;
-  foundation_year: any;
-  country: string;
-  genre: string;
-  description: string;
-  image: string;
+  nombre: string;
+  descripcion: string;
+  dificultad: string;
+  duracion: number;
+  ingredientes: string;
+  categoria: string;
+  imagen: string;
+  estrellas: number;
+  cantidadOpiniones: number;
+  autorReceta: string;
 
   constructor(
     id: number,
-    name: string,
-    foundation_year: any,
-    country: string,
-    genre: string,
-    description: string,
-    image: string
+    nombre: string,
+    descripcion: string,
+    dificultad: string,
+    duracion: number,
+    ingredientes: string,
+    categoria: string,
+    imagen: string,
+    estrellas: number,
+    cantidadOpiniones: number,
+    autorReceta: string
     ) {
     this.id = id;
-    this.name = name;
-    this.foundation_year = foundation_year;
-    this.country = country;
-    this.genre = genre;
-    this.description = description;
-    this.image = image;
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.dificultad = dificultad;
+    this.duracion = duracion;
+    this.ingredientes = ingredientes;
+    this.categoria = categoria;
+    this.imagen = imagen;
+    this.estrellas = estrellas;
+    this.cantidadOpiniones = cantidadOpiniones;
+    this.autorReceta = autorReceta;
     }
 }
 

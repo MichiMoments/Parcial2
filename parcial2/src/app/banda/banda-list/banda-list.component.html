@@ -1,0 +1,23 @@
+<div *ngIf="selected">
+  <app-banda-detail [bandaDetail]="selectedBanda"></app-banda-detail>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let banda of bandas">
+          <div class="card p-2" style="width: 15rem; height: 15rem">
+              <img
+                class="card-img-top"
+                src="{{ banda.image }}"
+                alt="{{ banda.name }}"
+                (click)="onSelected(banda)"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ banda.name }}</h5>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
+
+
